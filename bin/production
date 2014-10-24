@@ -1,0 +1,2 @@
+#!/bin/sh
+HEROKU_APP=acts4youth HKAPP=acts4youth exec "${HEROKU_COMMAND:-heroku}" "$@"
