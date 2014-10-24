@@ -1,0 +1,14 @@
+#navigation.cf
+  %ul
+    %li{:class => active_controller?("programming")}
+      = active_link_to 'Our Programming', programming_path
+    %li{:class => active_controller?("values")}
+      = active_link_to 'Our Values', values_path
+    %li{:class => active_controller?("staff_students")}
+      = active_link_to 'Staff/Students', staff_students_path
+    %li{:class => active_controller?("success_stories")}
+      = active_link_to 'Success Stories', success_stories_path
+    %li{:class => active_controller?("volunteering_partnerships")}
+      = active_link_to 'Volunteering/Partnerships', volunteering_partnerships_path
+    %li{:class => active_controller?("fundraising")}
+      = active_link_to 'Fundraising', fundraising_path

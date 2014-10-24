@@ -1,0 +1,40 @@
+#home
+  #left-rail
+
+    .quote
+      - blockquote do
+        %strong Acts4Youth
+        is taking a unique approach to attempt to address some of these issues that plague our boys, schools and communities.
+        I applaud their attempts to work with one of our local school’s administration to assist their efforts to address the challenges with their male poplulation...
+      %cite
+        %strong Councilman Bill Henry
+        %br
+        4th District Baltimore City
+
+    .inner
+      = render :partial => "common/contact_info"
+
+  #right-rail
+
+    .hero
+      = image_tag "hero/home-01.jpg"
+      = image_tag "hero/home-02.jpg"
+      = image_tag "hero/home-03.jpg"
+      = image_tag "hero/home-04.jpg"
+
+    .section
+      %h3
+        %strong Acts4Youth
+        News Feed
+
+    = render :partial => "events/event", :collection => @events
+
+    .quote
+      Acts4Youth is one of if not the only Christian organization offering solutions to at risk boys through after school and summer academies that address  academic, social, emotional, vocational and spiritual needs across elementary, middle and high school.
+      %cite
+        &ndash; Research/Marketing Group Loyola University
+
+
+
+
+        

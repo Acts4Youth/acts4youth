@@ -1,0 +1,23 @@
+#header.cf
+  .row.cf
+    .col
+      .logo
+        %a{:href => home_path, :title => "Acts 4 Youth"}
+          = image_tag "acts4youth-logo.png", :size => "229x159"
+    .col.controls
+      .quick-facts
+        %a{:href => "/pdfs/acts4youth-fact-sheet.pdf"}
+          QUICK FACTS ABOUT ACTS4YOUTH
+      .search
+        %form#cse-search-box{:action => "/search"}
+          %input.search{:name => "sa", :type => "submit", :value => "Search"}
+          %input{:name => "cx", :type => "hidden", :value => "014604968081393571353:tcqc4qkkyiu"}
+          %input{:name => "ie", :type => "hidden", :value => "UTF-8"}
+          %input.q{:name => "q", :size => "31", :type => "text"}
+      .donate-now
+        %a{:href => "https://interland3.donorperfect.net/weblink/weblink.aspx?name=acts4youth&id=3", :title => "Donate Now", :target => "_blank"} Donate Now
+    .description
+      %p
+        %strong ACTS4YOUTH 
+        is a Christian organization that partners with urban communities to equip at-risk boys with foundational character traits and life skills. We use comprehensive after-school and summer academies to help them become good students, citizens, teammates and employees, while fostering successful progressions into middle school and high school.
+  = render "common/navigation"
