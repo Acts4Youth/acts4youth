@@ -186,6 +186,20 @@ GEM
     rails_12factor (0.0.3)
       rails_serve_static_assets
       rails_stdout_logging
+    rails_admin (0.6.5)
+      builder (~> 3.1)
+      coffee-rails (~> 4.0)
+      font-awesome-rails (>= 3.0, < 5)
+      haml (~> 4.0)
+      jquery-rails (~> 3.0)
+      jquery-ui-rails (~> 5.0)
+      kaminari (~> 0.14)
+      nested_form (~> 0.3)
+      rack-pjax (~> 0.7)
+      rails (~> 4.0)
+      remotipart (~> 1.0)
+      safe_yaml (~> 1.0)
+      sass-rails (~> 4.0)
     rails_best_practices (1.15.4)
       activesupport
       awesome_print
@@ -318,6 +332,7 @@ DEPENDENCIES
   rack-livereload
   rails (= 4.1.6)
   rails_12factor
+  rails_admin
   rails_best_practices
   rb-fsevent
   rspec-rails
